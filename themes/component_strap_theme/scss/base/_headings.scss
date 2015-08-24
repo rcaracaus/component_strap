@@ -1,0 +1,17 @@
+/**
+ * Address variable `h1` font-size and margin within `section` and `article`
+ * contexts in Firefox 4+, Safari 5, and Chrome.
+ */
+
+h1 {
+  @extend %heading--primary;
+  @extend %text-centered;
+}
+
+h2 {
+  @extend %heading--secondary;
+}
+
+h3 {
+  @extend %heading--third;
+}

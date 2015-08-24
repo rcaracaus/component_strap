@@ -1,0 +1,30 @@
+// Font
+//
+// Markup: Font.html
+//
+// Styleguide components.Font
+
+.font--small,
+%font--small {
+  @include font-size-line-height(.8rem);
+}
+
+.font--summary,
+%font--summary {
+  @include font-size-line-height(1.2rem);
+  font-weight: 400;
+}
+
+.font--label,
+%font--label {
+  @extend %palette-4;
+  font-weight: bold;
+  text-transform: uppercase;
+  display: inline-block;
+  margin-bottom: 0.3rem;
+}
+
+
+
+
+

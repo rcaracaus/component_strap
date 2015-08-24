@@ -1,0 +1,24 @@
+// @file
+// General logic for responsive layouts.
+
+@mixin respond($media) {
+  @if $media == small {
+    @include breakpoint(min-width ($bp-small)) {
+      @content;
+    }
+  } @else if $media == medium {
+    @include breakpoint($bp-medium) {
+      @content;
+    }
+  } @else if $media == header {
+    @include breakpoint($bp-header) {
+      @content;
+    }
+  } @else if $media == large {
+    @include breakpoint($bp-large) {
+      @content;
+    }
+  } @else {
+    @warn "respond(#{$media}) not found!";
+  }
+}

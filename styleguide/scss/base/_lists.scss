@@ -1,0 +1,19 @@
+dl,
+menu,
+ol,
+ul {
+  margin: 0;
+  padding: 0rem 2rem 1rem;
+}
+
+ol,
+ul {
+  ol,
+  ul {
+    margin: 0;
+  }
+}
+
+dd {
+  margin: 0;
+}

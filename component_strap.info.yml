@@ -40,3 +40,4 @@ dependencies:
 themes:
   - bartik
   - seven
+  - component_strap_theme

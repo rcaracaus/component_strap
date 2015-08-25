@@ -23,7 +23,7 @@ options.styleGuide = {
     css: [
         'css/styles.css'
     ],
-    title: 'Component Strap'
+    template: "node_modules/kss/generator/twig/template"
 };
 
 // ##################
@@ -43,7 +43,7 @@ for (var flag in options.styleGuide) {
     }
 }
 gulp.task('styleguide', ['clean:styleguide'], $.shell.task(
-  ['kss-node <%= flags %>'],
+  ['node_modules/.bin/kss-node <%= flags %>'],
   {templateData: {flags: flags.join(' ')}}
 ));
 

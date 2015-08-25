@@ -7,19 +7,15 @@
 //
 // Styleguide layouts.three-column
 
-
-@import 'variables';
-@import 'singularitygs';
-@import 'breakpoint';
-@import 'layouts/layout-max/layout-max';
+@import '../bower_components/breakpoint-sass/stylesheets/breakpoint';
+@import '../bower_components/singularity/stylesheets/singularitygs';
+@import 'components/layout-max/layout-max';
 
 %layout-three-column,
 .layout-three-column {
   @extend %layout-max--sm-med-lrg;
   overflow: hidden;
 }
-
-
 
 @mixin layout-three-column__item($medium, $large, $gutter: 1/3) {
   @include add-grid(12);

@@ -4,17 +4,20 @@
 //
 // Styleguide components.grid-data
 
-@import 'library/font-size-line-height';
-@import 'layouts/layout-three-column/layout-three-column';
+@import '../bower_components/breakpoint-sass/stylesheets/breakpoint';
+@import 'components/layout-three-column/layout-three-column';
 @import 'components/read-more/read-more';
-@import 'components/spacer/spacer';
 @import 'components/flex-box/flex-box';
+@import 'components/font-size-line-height/font-size-line-height';
 
 .grid-data,
 %grid-data {
   @extend %layout-three-column;
-  @extend %spacer--large;
   @extend %flex-box;
+  padding: 1rem;
+  @include breakpoint(960px) {
+    padding: 3rem 1rem;
+  }
   flex-wrap: wrap;
   margin: auto;
   &:before,
@@ -33,7 +36,7 @@
   padding: 0;
   border-bottom: solid 4px color(grey-light) !important;
   &:hover {
-    border-color: palette($subsite-palette, bureau-communications-research border) !important;
+    border-color: color(red);
   }
   svg {
     fill: color(red);

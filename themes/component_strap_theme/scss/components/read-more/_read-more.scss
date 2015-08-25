@@ -4,6 +4,7 @@
 //
 // Styleguide components.read-more
 
+@import '../bower_components/breakpoint-sass/stylesheets/breakpoint';
 
 .read-more,
 %read-more {
@@ -14,7 +15,7 @@
   font-weight: 500;
 
   @include breakpoint($medium) {
-    font-size: $medium-font-size;
+    font-size: 1.125rem;
   }
 
   svg {

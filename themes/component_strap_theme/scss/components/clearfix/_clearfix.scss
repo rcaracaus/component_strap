@@ -1,0 +1,30 @@
+// Clearfix
+//
+// Markup: clearfix.html
+//
+// Styleguide components.clearfix
+
+@mixin clearfix() {
+  &:before {
+    content: '';
+    display: table;
+  }
+
+  &:after {
+    content: '';
+    display: table;
+    clear: both;
+  }
+}
+
+.clearfix,
+%clearfix {
+  @include clearfix();
+}
+
+.clearfix__overflow,
+%clearfix__overflow {
+  display: block;
+  overflow: hidden;
+  width: 100%;
+}

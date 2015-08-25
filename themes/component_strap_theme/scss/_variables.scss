@@ -1,0 +1,60 @@
+// The font size set on the root html element.
+$base-font-size:    16px;
+
+// The base line height determines the basic unit of vertical rhythm.
+$base-line-height:  25px;
+$base-line-height-ratio: 1.75;
+
+// Colors
+//
+// Use the <code>color()</code> function to add colors to CSS properties.
+
+// Define useful names of color values.
+$colors: (
+  black:            #12293a,
+  white:            #fff,
+  grey-off-white:   #e4e4e4,
+  grey-extra-light: #e2e2e2,
+  grey-light:       #b9b9b9,
+  grey-dark:        #616161,
+  grey-extra-dark:  #444,
+  dark:             #12293a,
+  blue:             #00478c,
+  blue-light:       #007abb,
+  blue-extra-light: #55c7e3,
+  red:              #cd4d02,
+  yellow:           #e69a3d,
+  green:            #22c064,
+  blue-alert:       #2478ab,
+);
+
+//
+// Breakpoints
+//
+
+$breakpoint-no-queries: false;
+$breakpoint-no-query-fallbacks: true;
+
+$small:  480px;
+$medium: 720px;
+$large:  980px;
+$x-large: 1280px;
+$not-large: ($large - 1px) max-width;
+
+$gutter:      20px;
+$half-gutter: ($gutter / 2);
+
+//
+// Misc
+//
+
+// The amount lists, blockquotes and comments are indented.
+$indent-amount: 25px;
+
+// Tab styling.
+$tabs-container-bg: #fff;
+$tabs-border: #bbb;
+
+// These variables keep form elements the same height.
+$input-height: 40px;
+$header-button-height: 34px;

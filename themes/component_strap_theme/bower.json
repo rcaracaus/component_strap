@@ -16,6 +16,7 @@
   ],
   "devDependencies": {
     "breakpoint-sass": "~2.5.0",
-    "jquery": "~2.1.4"
+    "jquery": "~2.1.4",
+    "singularity": "~1.6.2"
   }
 }

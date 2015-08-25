@@ -1,0 +1,31 @@
+// Read More
+//
+// Markup: read-more.html
+//
+// Styleguide components.read-more
+
+
+.read-more,
+%read-more {
+  @include font-size-line-height(0.95rem);
+  padding-top: 1rem;
+  display: inline-block;
+  fill: currentColor;
+  font-weight: 500;
+
+  @include breakpoint($medium) {
+    font-size: $medium-font-size;
+  }
+
+  svg {
+    padding-left: .25rem;
+    padding-bottom: .10rem;
+    height: 15px;
+    width: 16px;
+
+    @include breakpoint($medium) {
+      vertical-align: baseline;
+      padding-bottom: 0;
+    }
+  }
+}

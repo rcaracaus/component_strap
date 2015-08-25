@@ -11,17 +11,40 @@ var gulp             = require('gulp'),
     concat           = require('gulp-concat');
 
 
+options = {}
 
-// Build styleguide.
-gulp.task('styleguide', ['clean:styleguide'], $.shell.task([
-  // kss-node [source folder of files to parse] [destination folder] --template [location of template files]
-  'kss-node <%= source %> <%= destination %>'
-], {
-    templateData: {
-      source:       'scss',
-      destination:  'styleguide'
+// Define the style guide paths and options.
+options.styleGuide = {
+    source: 'scss',
+    destination: 'styleguide',
+
+    // The css and js paths are URLs, like '/misc/jquery.js'.
+    // The following paths are relative to the generated style guide.
+    css: [
+        'css/styles.css'
+    ],
+    title: 'Component Strap'
+};
+
+// ##################
+// Build style guide.
+// ##################
+var flags = [], values;
+// Construct our command-line flags from the options.styleGuide object.
+for (var flag in options.styleGuide) {
+    if (options.styleGuide.hasOwnProperty(flag)) {
+        values = options.styleGuide[flag];
+        if (!Array.isArray(values)) {
+            values = [values];
+        }
+        for (var i = 0; i < values.length; i++) {
+            flags.push('--' + flag + '=\'' + values[i] + '\'');
+        }
     }
-  }
+}
+gulp.task('styleguide', ['clean:styleguide'], $.shell.task(
+  ['kss-node <%= flags %>'],
+  {templateData: {flags: flags.join(' ')}}
 ));
 
 

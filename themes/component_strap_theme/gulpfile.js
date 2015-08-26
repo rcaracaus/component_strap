@@ -15,7 +15,10 @@ options = {}
 
 // Define the style guide paths and options.
 options.styleGuide = {
-    source: 'scss',
+    source: [
+        'scss',
+      'templates/components'
+    ],
     destination: 'styleguide',
 
     // The css and js paths are URLs, like '/misc/jquery.js'.
@@ -65,9 +68,15 @@ gulp.task('watch', ['styles', 'scripts', 'styleguide'], function() {
         }
     });
 
-    gulp.watch(['scss/**/*.scss'], ['styles']);
+    gulp.watch([
+        'scss/**/*.scss',
+        'templates/components/**/*.scss'
+    ], ['styles']);
 
-    gulp.watch(['scss/**/*.html'], ['styleguide', browserSync.reload]);
+    gulp.watch([
+        'scss/**/*.twig',
+        'templates/components/**/*.twig'
+    ], ['styleguide', browserSync.reload]);
 
     gulp.watch(['scss/components/**/*.js'], ['scripts', browserSync.reload]);
 

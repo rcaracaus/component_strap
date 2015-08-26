@@ -4,3 +4,6 @@
  *
  * @see \Drupal\system\Tests\Installer\InstallerTranslationTest::testInstaller()
  */
+body {
+    background: red;
+}

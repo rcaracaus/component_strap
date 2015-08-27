@@ -1,0 +1,16 @@
+<?php
+
+/**
+ * Implements hook_theme().
+ */
+function component_strap_theme() {
+  return [
+    'test' => [
+      'variables' => [
+        'name' => '',
+      ],
+    ],
+    'path' => 'profiles/component_strap/themes/component_strap_theme/templates',
+    'template' => 'test'
+  ];
+}

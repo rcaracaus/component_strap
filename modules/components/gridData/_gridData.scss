@@ -1,14 +1,14 @@
 // Grid Data
 //
-// Markup: grid-data.html.twig
+// Markup: gridData.html.twig
 //
-// Styleguide components.grid-data
+// Styleguide components.gridData
 
-@import '../bower_components/breakpoint-sass/stylesheets/breakpoint';
-@import 'components/layout-three-column/layout-three-column';
-@import '../templates/components/read-more/read-more';
-@import 'components/flex-box/flex-box';
-@import 'components/font-size-line-height/font-size-line-height';
+@import '../../../themes/component_strap_theme/bower_components/breakpoint-sass/stylesheets/breakpoint';
+@import '../../../themes/component_strap_theme/scss/components/layout-three-column/layout-three-column';
+@import '../readMore/readMore';
+@import '../../../themes/component_strap_theme/scss/components/flex-box/flex-box';
+@import '../../../themes/component_strap_theme/scss/components/font-size-line-height/font-size-line-height';
 
 .grid-data,
 %grid-data {

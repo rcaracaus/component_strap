@@ -1,0 +1,13 @@
+<?php
+/**
+ * Implements hook_theme().
+ */
+function readMore_theme() {
+  return [
+    'readMore' => [
+      'variables' => [
+        'name' => '',
+      ],
+    ],
+  ];
+}

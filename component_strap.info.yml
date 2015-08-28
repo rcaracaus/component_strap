@@ -37,6 +37,13 @@ dependencies:
   - views
   - views_ui
   - tour
+  - rest
+  - serialization
+  - hal
+  # Contrib modules
+  - default_content
+  # Display modules
+  - readMore
 themes:
   - bartik
   - seven

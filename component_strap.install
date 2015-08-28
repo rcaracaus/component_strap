@@ -68,4 +68,8 @@ function component_strap_install() {
 
   // Enable the admin theme.
   \Drupal::configFactory()->getEditable('node.settings')->set('use_admin_theme', TRUE)->save(TRUE);
+
+  // Enable test content module after
+  \Drupal::moduleHandler()->addModule('default_content_test', 'profiles/component_strap/modules/contrib/default_content_test');
+  \Drupal::service('default_content.manager')->importContent('default_content_test');
 }

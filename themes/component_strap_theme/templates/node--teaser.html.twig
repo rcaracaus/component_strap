@@ -1,16 +1,1 @@
-<div>
-
-  <h2>
-    <a href="{{ url }}">{{ label }}</a>
-  </h2>
-
-  {{ content|without('links') }}
-
-  {%
-    include "readMore.html.twig" with {
-      "title": "Learn More",
-      "url": url
-    }
-  %}
-
-</div>
+{% extends 'gridDataItem.html.twig' %}

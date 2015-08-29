@@ -14,5 +14,10 @@ function components_theme() {
         'name' => '',
       ],
     ],
+    'gridDataItem' => [
+      'variables' => [
+        'name' => '',
+      ],
+    ],
   ];
 }

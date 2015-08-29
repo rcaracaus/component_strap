@@ -1,1 +1,21 @@
-gridData--theme
+<div class="grid-data__palette">
+    <div class="grid-data">
+
+        {% block grid %}
+
+            {%
+                include 'gridDataItem.html.twig' with {
+                    "title": "Ipsum Lorem"
+                }
+            %}
+
+            {%
+                include 'gridDataItem.html.twig' with {
+                    "title": "Lorem Ipsum"
+                }
+            %}
+
+        {% endblock %}
+
+    </div>
+</div>

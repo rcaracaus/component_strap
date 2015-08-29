@@ -2,9 +2,9 @@
 /**
  * Implements hook_theme().
  */
-function readMore_theme() {
+function read_more_theme() {
   return [
-    'readMore' => [
+    'read-more' => [
       'variables' => [
         'name' => '',
       ],

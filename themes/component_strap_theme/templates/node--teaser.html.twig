@@ -1,13 +1,16 @@
-<article{{ attributes.addClass(classes) }}>
+<div>
 
   <h2>
-    <a href="{{ url }}" rel="bookmark">{{ label }}</a>
+    <a href="{{ url }}">{{ label }}</a>
   </h2>
 
-  <div>
-    {{ content|without('links') }}
-  </div>
+  {{ content|without('links') }}
 
-  {% include "readMore.html.twig" %}
+  {%
+    include "read-more.html.twig" with {
+      "title": "Learn More",
+      "url": url
+    }
+  %}
 
-</article>
+</div>

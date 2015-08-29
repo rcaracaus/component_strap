@@ -1,0 +1,18 @@
+<?php
+/**
+ * Implements hook_theme().
+ */
+function components_theme() {
+  return [
+    'gridData' => [
+      'variables' => [
+        'name' => '',
+      ],
+    ],
+    'readMore' => [
+      'variables' => [
+        'name' => '',
+      ],
+    ],
+  ];
+}

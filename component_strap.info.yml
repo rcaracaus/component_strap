@@ -43,7 +43,7 @@ dependencies:
   # Contrib modules
   - default_content
   # Display modules
-  - read_more
+  - components
 themes:
   - bartik
   - seven

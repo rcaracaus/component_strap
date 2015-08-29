@@ -17,7 +17,7 @@ options = {}
 options.styleGuide = {
     source: [
         'scss',
-        '../../modules/components/'
+        'templates/components'
     ],
     destination: 'styleguide',
 
@@ -70,15 +70,15 @@ gulp.task('watch', ['styles', 'scripts', 'styleguide'], function() {
 
     gulp.watch([
         'scss/**/*.scss',
-        '../../modules/components/**/*.scss'
+        'templates/components/**/*.scss'
     ], ['styles']);
 
     gulp.watch([
         'scss/**/*.twig',
-        '../../modules/components/**/*.scss'
+        'templates/components/**/*.scss'
     ], ['styleguide', browserSync.reload]);
 
-    gulp.watch(['../../modules/components/**/*.js'], ['scripts', browserSync.reload]);
+    gulp.watch(['templates/components/**/*.js'], ['scripts', browserSync.reload]);
 
 });
 

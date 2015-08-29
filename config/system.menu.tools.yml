@@ -1,8 +1,0 @@
-uuid: 468c34ba-988d-4d12-8f07-7df74a059c94
-langcode: en
-status: true
-dependencies: {  }
-id: tools
-label: Tools
-description: 'Contains links for site visitors. Some modules add their links here.'
-locked: true

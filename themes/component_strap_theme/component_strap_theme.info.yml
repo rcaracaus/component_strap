@@ -6,4 +6,4 @@ version: VERSION
 core: 8.x
 
 libraries:
-  - classy/base
+  - component_strap_theme/global-styling

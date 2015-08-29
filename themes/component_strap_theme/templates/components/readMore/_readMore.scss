@@ -6,8 +6,8 @@
 
 @import '../../../themes/component_strap_theme/bower_components/breakpoint-sass/stylesheets/breakpoint';
 
-.read-more,
-%read-more {
+.readMore,
+%readMore {
   @include font-size-line-height(0.95rem);
   padding-top: 1rem;
   display: inline-block;

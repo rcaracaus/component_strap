@@ -1,16 +1,8 @@
 <?php
 
 /**
- * Implements hook_theme().
+ * Implements hook_theme_suggestions_HOOK_alter().
  */
-function component_strap_theme() {
-  return [
-    'test' => [
-      'variables' => [
-        'name' => '',
-      ],
-    ],
-    'path' => 'profiles/component_strap/themes/component_strap_theme/templates',
-    'template' => 'test'
-  ];
+function component_strap_theme_theme_suggestions_node_alter(array &$suggestions, array $variables) {
+  $suggestions[] = 'node__' . $variables['view_mode'];
 }

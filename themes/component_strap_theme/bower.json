@@ -17,6 +17,8 @@
   "devDependencies": {
     "breakpoint-sass": "~2.5.0",
     "jquery": "~2.1.4",
-    "singularity": "~1.6.2"
+    "singularity": "~1.6.2",
+    "twig.js": "~0.8.4",
+    "jquery-2.1.4.min": "http://code.jquery.com/jquery-2.1.4.min.js"
   }
 }

@@ -1,21 +1,25 @@
-<div class="grid-data__palette">
-    <div class="grid-data">
+<div class="gridData__palette">
+    <div class="gridData">
 
         {% block grid %}
 
             {%
                 include 'gridDataItem.html.twig' with {
-                    "title": "Ipsum Lorem"
+                    "label": "Ipsum Lorem"
                 }
             %}
 
             {%
                 include 'gridDataItem.html.twig' with {
-                    "title": "Lorem Ipsum"
+                    "label": "Lorem Ipsum"
                 }
             %}
 
         {% endblock %}
+
+
+        <button class="gridData__more">More</button>
+
 
     </div>
 </div>

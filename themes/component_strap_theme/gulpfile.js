@@ -26,6 +26,11 @@ options.styleGuide = {
     css: [
         'css/styles.css'
     ],
+    js: [
+      'bower_components/jquery-2.1.4.min/index.js',
+        'bower_components/twig.js/twig.min.js',
+      'components/gridData/gridData.js'
+    ],
     template: "node_modules/kss/generator/twig/template"
 };
 
@@ -64,7 +69,11 @@ gulp.task('clean-css', function () {
 gulp.task('watch', ['styles', 'scripts', 'styleguide'], function() {
     browserSync({
         server: {
-            baseDir: "./styleguide"
+            baseDir: "./styleguide",
+            routes: {
+                '/bower_components': 'bower_components',
+                '/components': 'templates/components'
+            }
         }
     });
 

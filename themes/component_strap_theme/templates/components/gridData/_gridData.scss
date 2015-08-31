@@ -10,8 +10,8 @@
 @import './components/flex-box/flex-box';
 @import './components/font-size-line-height/font-size-line-height';
 
-.grid-data,
-%grid-data {
+.gridData,
+%gridData {
   @extend %layout-three-column;
   @extend %flex-box;
   padding: 1rem;
@@ -26,8 +26,8 @@
   }
 }
 
-.grid-data__item,
-%grid-data__item {
+.gridData__item,
+%gridData__item {
   @extend %read-more;
   @include layout-three-column__item($medium, $large, 1/20);
   display: block;
@@ -45,8 +45,8 @@
   }
 }
 
-.grid-data__link-text,
-%grid-data__link-text {
+.gridData__link-text,
+%gridData__link-text {
   @include font-size-line-height(1.75rem);
   display: inline-block;
   padding: .5rem 1rem 1rem;
